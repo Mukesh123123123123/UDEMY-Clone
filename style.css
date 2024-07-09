@@ -7,11 +7,11 @@
 .navebar {
     justify-content: space-between;
     display: flex;
-    border-bottom: solid black 2px;
+    border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 5px;
     background-color: white;
     width: 100%;
     z-index: 1;
@@ -27,6 +27,7 @@
     border-radius: 30px;
     width: 100%;
     gap: 20px;
+    top: 1px;
 }
 
 .navebar__s2 input {
@@ -72,6 +73,7 @@
     justify-content: space-around;
     border-bottom: solid black 2px;
     padding: 10px;
+    
 }
 
 .catagires p{
@@ -80,7 +82,9 @@
     padding: 5px;
     border-radius: 30px;
     cursor: pointer;
+    top: 10px;
 }
+
 
 .catagires p:hover{
 transition: 1s;
@@ -91,6 +95,7 @@ border: solid black 1px;
 
 .sale-image img{
     width: 100%;
+    margin-top: 10px;
 }
 
 .sales-image__offer {
@@ -101,6 +106,18 @@ border: solid black 1px;
     position: absolute;
     top: 20%;
     left: 5%;
+    animation-name: zoom;
+    animation-duration: 3s;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 #recommended
 {
